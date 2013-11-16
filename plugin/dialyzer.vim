@@ -17,4 +17,4 @@ endif
 let g:loaded_dialyzer = 1
 
 command! -bang -nargs=* -complete=custom,dialyzer#complete Dialyzer
-            \ echo dialyzer#dispatch(expand('<bang>'), [<f-args>])
+            \ call dialyzer#dispatch(expand('<bang>'), [<f-args>])
